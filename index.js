@@ -58,9 +58,9 @@ function displayhistory() {
   });
 }
 
-add(5, 3);
-subtract(10, 4);
-multiply(6, 7);
-divide(20, 5);
+add(5, 2);
+subtract(15, 4);
+multiply(5, 7);
+divide(35, 5);
 
 displayhistory();

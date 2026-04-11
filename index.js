@@ -1,8 +1,8 @@
-// History array
+// HISTORY ARRAY
 const history = [];
 
 // Function to add to history
-function addToHistory(num1, operator, num2, result) {
+function addtohistory(num1, operator, num2, result) {
   history.push({
     operand1: num1,
     operator: operator,
@@ -14,21 +14,21 @@ function addToHistory(num1, operator, num2, result) {
 // Addition
 function add(num1, num2) {
   const result = num1 + num2;
-  addToHistory(num1, "+", num2, result);
+  addtohistory(num1, "+", num2, result);
   return result;
 }
 
 // Subtraction
 function subtract(num1, num2) {
   const result = num1 - num2;
-  addToHistory(num1, "-", num2, result);
+  addtohistory(num1, "-", num2, result);
   return result;
 }
 
 // Multiplication
 function multiply(num1, num2) {
   const result = num1 * num2;
-  addToHistory(num1, "*", num2, result);
+  addtohistory(num1, "*", num2, result);
   return result;
 }
 
@@ -39,12 +39,12 @@ function divide(num1, num2) {
   }
   
   const result = num1 / num2;
-  addToHistory(num1, "/", num2, result);
+  addtohistory(num1, "/", num2, result);
   return result;
 }
 
 // Display history
-function displayHistory() {
+function displayhistory() {
   if (history.length === 0) {
     console.log("No calculations stored.");
     return;
@@ -57,3 +57,10 @@ function displayHistory() {
     );
   });
 }
+
+add(5, 3);
+subtract(10, 4);
+multiply(6, 7);
+divide(20, 5);
+
+displayhistory();
